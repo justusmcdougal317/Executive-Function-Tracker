@@ -33,7 +33,7 @@
         top: 20px;
         right: 20px;
         font-size: 18px;
-        color: #333; /* You can adjust the color */
+        color: #333;
       }
     </style>
     <title>Work Day Scheduler</title>
@@ -49,20 +49,11 @@
       <p id="currentDay" class="lead"></p>
     </header>
 
-    <!-- Add the date and time here -->
+   
     <div class="date-time">Date and Time</div>
 
     <div class="container-fluid px-5">
-      <!-- Rest of your content here -->
-     <!-- Use class for "past", "present", and "future" to apply styles to the
-        time-block divs accordingly. The javascript will need to do this by
-        adding/removing these classes on each div by comparing the hour in the
-        id to the current hour. The html provided below is meant to be an example
-        demonstrating how the css provided can be leveraged to create the
-        desired layout and colors. The html below should be removed or updated
-        in the finished product. Remember to delete this comment once the
-        code is implemented.
-        -->
+   
 
         <div id="hour-9" class="row time-block future">
           <div class="col-2 col-md-1 hour text-center py-3">9AM</div>
@@ -164,11 +155,12 @@
         dateTimeElement.textContent = dateTimeString;
       }
 
-      // Update the date and time every second
+     
       setInterval(updateDateTime, 1000);
 
-      // Call the function to set the initial date and time
+     
       updateDateTime();
     </script>
+    <script src="script.js"></script>
   </body>
 </html>
