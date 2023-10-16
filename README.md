@@ -1,24 +1,8 @@
 # Executive-Function-Tracker
-
-// Wrap all code that interacts with the DOM in a call to jQuery to ensure that
-// the code isn't run until the browser has finished rendering all the elements
-// in the html.
-$(function () {
-  // TODO: Add a listener for click events on the save button. This code should
-  // use the id in the containing time-block as a key to save the user input in
-  // local storage. HINT: What does `this` reference in the click listener
-  // function? How can DOM traversal be used to get the "hour-x" id of the
-  // time-block containing the button that was clicked? How might the id be
-  // useful when saving the description in local storage?
-  //
-  // TODO: Add code to apply the past, present, or future class to each time
-  // block by comparing the id to the current hour. HINTS: How can the id
-  // attribute of each time-block be used to conditionally add or remove the
-  // past, present, and future classes? How can Day.js be used to get the
-  // current hour in 24-hour time?
-  //
-  // TODO: Add code to get any user input that was saved in localStorage and set
-  // the values of the corresponding textarea elements. HINT: How can the id
-  // attribute of each time-block be used to do this?
-  //
-  // TODO: Add code to display the current date in the header of the page.
+Purpose of this application is to enable users to track their tasks for the work day to aid in completion of said tasks.
+3 languages were mainly utilized HTML,CSS and javascript. 
+HTML was used to set the framework for the type of website serving as the residence for eveything we desire in our apllication to reside.
+CSS was used to style the coloring of the application as well as font size,padding etc.
+JavaScript was used make the application interactive. I added multiple event listeners to create a chain reaction resultion in past divs changing color after the hour has passed. Java script was also used to add a function creating local storage saving all text entered into the page upon reloading the screen. "updatehourblocks" function was used to change color after the hour passed, "saveTextToLocalStorage" function was used for creating local storage.
+HTML carried all of the divs that contained multiple elements ,classes and attributes all fit together to make desired outcome achievable.
+Deployable Link:  http://127.0.0.1:5501/index.html
